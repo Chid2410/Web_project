@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+    <head>
+       <title>Login and Registration</title>
+       <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+         
+         <div class="container">
+         <div class="topnav">
+  <a class="active" href="#home" style="font-family:Times New" style="font-color:#00ffff">Home</a>
+  <a href="Email.html">Contact</a>
+  <a href="#about">About</a>
+</div>
+            <div class="card">
+                <div class="inner-box" id="card">
+                  <div  class="card-front">
+                        <h2 style="font-family:Times New">LOGIN</h2>
+                        <form>
+                            <input type="email" class="input-box" placeholder="Your Email Id" required>
+                            <input type="password" class="input-box" placeholder="Password" required>
+                            <button type="submit" class="submit-btn">Submit</button>
+                            <input type="checkbox"><span>Remember Me</span>
+                        </form>
+                        <button type="button" class="btn" onclick="openRegister()">I'm New Here</button>
+                        <a href="">Forgot Password</a>
+                  </div>
+                  <div class="card-back"> 
+                  <h2 style="font-family:Times New">REGISTER</h2>
+                        <form>
+                            <input type="text" class="input-box" placeholder="Your Name" required>
+                            <input type="email" class="input-box" placeholder="Your Email Id" required>
+                            <input type="password" class="input-box" placeholder="Enter New Password" required>
+                            <input type="password" class="input-box" placeholder="Confirm New Password" required>
+                            <label> Date of Birth<input type="Date" class="input-box" placeholder="DOB" required>
+                            <span class="validity"></span></label>
+                            <div>
+                                Gender: Male <input type="radio" name="mygender">
+                                Female<input type="radio" name="mygender">
+                                 Others<input type="radio" name="mygender">
+                                </div>
+                                <div>
+                                    <label for="district">District</label>
+                                    <select name="your district" >id="district">
+                                        <option value="non">None</option>
+                                        <option value="nal">Nalbari</option>
+                                        <option value="kam">Kamrup</option>
+                                        <option value="bar">Barpeta</option>
+                                        <option value="nag">Nagaon</option>
+                        
+                                    </select>
+                                    </div>
+                            <button type="submit" class="submit-btn">Submit</button>
+                            
+                           
+                        </form>
+                        <button type="button" class="btn" onclick="openLogin()">I've an account</button>
+                        <a href="">Forgot Password</a>
+                        
+                        </div>
+
+
+                  </div>
+                  </div>
+          </div>
+             
+              <script>
+                var card = document.getElementById("card");
+                
+                function openRegister(){
+                    card.style.transform = "rotateY(-180deg)";
+                }
+                function openLogin(){
+                    card.style.transform = "rotateY(0deg)";
+                }
+
+
+            </script>
+   <div class="footer" style="font-family: Times New">
+    <footer>
+  <p>© Chidangsha S Bezboruah    &     Rinji Deka</p>
+  
+</footer>
+       </div>  
+         
+    </body>
+    </html>
+
+   
+
+
